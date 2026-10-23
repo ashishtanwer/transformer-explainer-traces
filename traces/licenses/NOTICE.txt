@@ -1,0 +1,6 @@
+The expert operation recordings contain small, unmodified parameter slices from IBM Granite 3.1 1B-A400M base.
+Model: ibm-granite/granite-3.1-1b-a400m-base
+Revision: 408b6e90baab8cf24f4aa9f8e19703ffa0a53b29
+Source: https://huggingface.co/ibm-granite/granite-3.1-1b-a400m-base/tree/408b6e90baab8cf24f4aa9f8e19703ffa0a53b29
+License: Apache License, Version 2.0 (included as Apache-2.0.txt).
+The accompanying capture script produces new activation measurements and compact parameter previews. The complete checkpoint is not included.

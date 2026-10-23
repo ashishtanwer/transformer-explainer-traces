@@ -1,0 +1,27 @@
+# Transformer Explainer recordings
+
+Recorded forward passes that the hosted Transformer Explainer loads for its MLA,
+encoder–decoder, Mamba hybrid, vision–language and ViT tabs. The files are too
+large for the site's static host, so the hosted build fetches them from a pinned
+commit of this repository through `raw.githubusercontent.com`. The browser checks
+every file against the SHA-256 recorded in its manifest before using it.
+
+This repository holds data only. The application code lives elsewhere.
+
+| Path | Checkpoint |
+| --- | --- |
+| `traces/deepseek-mla.json`, `traces/*-operations-deepseek-fact.json*` | [DeepSeek-V2-Lite](https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite) |
+| `traces/t5-full.json` | [T5-small](https://huggingface.co/google-t5/t5-small) |
+| `traces/hybrid/` | [Zamba2-1.2B](https://huggingface.co/Zyphra/Zamba2-1.2B) |
+| `traces/vlm/` | [SmolVLM-256M-Instruct](https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct) |
+| `traces/vit/` | [DeiT-tiny-patch16-224](https://huggingface.co/facebook/deit-tiny-patch16-224) |
+
+Each manifest records the checkpoint revision, file hashes, capture script hash
+and library versions. The recordings contain activations and small excerpts of
+weight rows used to show arithmetic, never complete checkpoints. Each excerpt
+remains under its checkpoint's license; see the model pages above and
+`traces/licenses/`.
+
+Files larger than the host's per-file limit are stored as `chunked-json` parts:
+the original file is a manifest that lists its `.bin` parts and their hashes, and
+the browser reassembles and verifies the exact bytes.
