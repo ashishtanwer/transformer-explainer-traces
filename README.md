@@ -1,7 +1,7 @@
 # Transformer Explainer recordings
 
 Recorded forward passes that the hosted Transformer Explainer loads for its MLA,
-encoder–decoder, Mamba hybrid, vision–language and ViT tabs. The files are too
+encoder–decoder, speech, Mamba hybrid, vision–language and ViT tabs. The files are too
 large for the site's static host, so the hosted build fetches them from a pinned
 commit of this repository through `raw.githubusercontent.com`. The browser checks
 every file against the SHA-256 recorded in its manifest before using it.
@@ -12,6 +12,7 @@ This repository holds data only. The application code lives elsewhere.
 | --- | --- |
 | `traces/deepseek-mla.json`, `traces/*-operations-deepseek-fact.json*` | [DeepSeek-V2-Lite](https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite) |
 | `traces/t5-full.json` | [T5-small](https://huggingface.co/google-t5/t5-small) |
+| `traces/speech/` | [Whisper base](https://huggingface.co/openai/whisper-base); audio: LibriSpeech dev-clean 1272-135031-0012 (CC BY 4.0) |
 | `traces/hybrid/` | [Zamba2-1.2B](https://huggingface.co/Zyphra/Zamba2-1.2B) |
 | `traces/vlm/` | [SmolVLM-256M-Instruct](https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct) |
 | `traces/vit/` | [DeiT-tiny-patch16-224](https://huggingface.co/facebook/deit-tiny-patch16-224) |
