@@ -2,10 +2,11 @@
 
 Recorded forward passes that the hosted Transformer Explainer loads for its MLA,
 encoder–decoder, speech, Mamba hybrid, vision–language, ViT, DiT, encoder-only,
-SAM, protein, local–global, time-series, CLIP and training tabs. The files are too
-large for the site's static host, so the hosted build fetches them from a pinned
-commit of this repository through `raw.githubusercontent.com`. The browser checks
-every file against the SHA-256 recorded in its manifest before using it.
+SAM, protein, local–global, time-series, CLIP, training and Diffusion LM tabs. The
+files are too large for the site's static host, so the hosted build fetches them
+from a pinned commit of this repository through `raw.githubusercontent.com`. The
+browser checks every file against the SHA-256 recorded in its manifest before
+using it.
 
 This repository holds data only. The application code lives elsewhere.
 
@@ -27,6 +28,7 @@ This repository holds data only. The application code lives elsewhere.
 | `traces/time-series/` | [Chronos-T5 small](https://huggingface.co/amazon/chronos-t5-small); series: NOAA NCEI contiguous-U.S. monthly average temperature (public domain) |
 | `traces/clip/` | [CLIP ViT-B/32](https://huggingface.co/openai/clip-vit-base-patch32) (MIT, see `traces/clip/LICENSE-openai-CLIP.txt`) |
 | `traces/training/` | [GPT-2 (124M)](https://huggingface.co/openai-community/gpt2), one training step (MIT; `traces/training/LICENSE-gpt2.txt`) |
+| `traces/diffusion-lm/` | [LLaDA-8B-Instruct](https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct) (activations only, no weight excerpts) |
 
 Each manifest records the checkpoint revision, file hashes, capture script hash
 and library versions. The recordings contain activations and small excerpts of
