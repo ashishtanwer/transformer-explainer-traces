@@ -1,9 +1,9 @@
 # Transformer Explainer recordings
 
 Recorded forward passes that the hosted Transformer Explainer loads for its MLA,
-encoder–decoder, speech, Mamba hybrid, vision–language, ViT, DiT, encoder-only and
-SAM tabs. The files are too large for the site's static host, so the hosted build
-fetches them from a pinned commit of this repository through
+encoder–decoder, speech, Mamba hybrid, vision–language, ViT, DiT, encoder-only,
+SAM and protein tabs. The files are too large for the site's static host, so the
+hosted build fetches them from a pinned commit of this repository through
 `raw.githubusercontent.com`. The browser checks every file against the SHA-256
 recorded in its manifest before using it.
 
@@ -22,6 +22,7 @@ This repository holds data only. The application code lives elsewhere.
 | `traces/diffusion-transformer/` | [DiT-XL-2-256](https://huggingface.co/facebook/DiT-XL-2-256), CC BY-NC 4.0; see its README |
 | `traces/encoder-only/` | [ModernBERT-base](https://huggingface.co/answerdotai/ModernBERT-base) |
 | `traces/sam/` | [SAM ViT-B](https://huggingface.co/facebook/sam-vit-base) |
+| `traces/protein/` | [ESM-2 35M](https://huggingface.co/facebook/esm2_t12_35M_UR50D) on PDB [1UBQ](https://www.rcsb.org/structure/1UBQ) |
 
 Each manifest records the checkpoint revision, file hashes, capture script hash
 and library versions. The recordings contain activations and small excerpts of
