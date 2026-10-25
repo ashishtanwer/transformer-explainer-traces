@@ -12,3 +12,11 @@ Copy used: hf-internal-testing/librispeech_asr_dummy, revision 5be91486e11a2d616
 Corpus: https://www.openslr.org/12
 License: Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
 The Whisper recording (openai/whisper-base, Apache-2.0) stores activations only; it contains no model parameters.
+
+The time-series recording forecasts one public-domain series, redistributed unmodified.
+Data: NOAA National Centers for Environmental Information, Climate at a Glance: National Time Series,
+contiguous U.S. average temperature, monthly, January 1895 – September 2026 (retrieved October 25, 2026)
+Source: https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/national/time-series/110/tavg/1/0/1895-2026/data.csv
+License: U.S. Government work, not subject to copyright in the United States (public domain)
+File: traces/time-series/ncei-conus-tavg-monthly.csv (SHA-256 6152f89d28d44fff936532ec09c392be2042aef27b47dbfffe77913ba026978f)
+The Chronos-T5 small recording (amazon/chronos-t5-small, Apache-2.0) stores activations only; it contains no model parameters.
