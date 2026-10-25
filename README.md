@@ -15,6 +15,7 @@ This repository holds data only. The application code lives elsewhere.
 | `traces/hybrid/` | [Zamba2-1.2B](https://huggingface.co/Zyphra/Zamba2-1.2B) |
 | `traces/vlm/` | [SmolVLM-256M-Instruct](https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct) |
 | `traces/vit/` | [DeiT-tiny-patch16-224](https://huggingface.co/facebook/deit-tiny-patch16-224) |
+| `traces/speculative-decoding/` | [Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct) drafting for [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) (activations and probabilities only, no weight excerpts) |
 
 Each manifest records the checkpoint revision, file hashes, capture script hash
 and library versions. The recordings contain activations and small excerpts of
